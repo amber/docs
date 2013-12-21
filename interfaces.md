@@ -36,8 +36,8 @@
 
 ### UserInfo
 
-unsigned __scratchId__ — the number used by Scratch to identify the user
-string<"administrator", "moderator", "default", "limited">? __group__ — the user’s group, or null if default
+* unsigned __scratchId__ — the number used by Scratch to identify the user
+* string<"administrator", "moderator", "default", "limited">? __group__ — the user’s group, or null if default
 
 
 
