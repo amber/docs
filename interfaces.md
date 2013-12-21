@@ -1,5 +1,7 @@
 # Interfaces
 
+
+
 ## Requests
 
 ### enum RequestError
@@ -178,7 +180,12 @@
 
 
 
-## Data
+## Editor
+
+### SessionInfo
+
+* User[] __users__
+* unsigned __historyLength__
 
 ### Stage
 
