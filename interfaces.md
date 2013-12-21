@@ -7,11 +7,15 @@
 * __notFound__ = 0
 * __incorrectCredentials__ = 1
 
+
+
 ## Translation
 
 ### trans
 
 * string __$__ : the untranslated key
+
+
 
 ## Users
 
@@ -34,6 +38,8 @@
 
 unsigned __scratchId__ : the number used by Scratch to identify the user
 string<"administrator", "moderator", "default", "limited">? __group__ : the user’s group, or null if default
+
+
 
 ## Forums
 
@@ -87,6 +93,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * timestamp __created__
 * timestamp __modified__
 
+
+
 ## Projects
 
 ### Project
@@ -116,6 +124,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * string(asset) __thumbnail__
 * bool __isLoved__
 
+
+
 ## Collections
 
 ### Collection
@@ -131,6 +141,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * string __name__
 * string(asset) __thumbnail__
 
+
+
 ## Tags
 
 ### Tag
@@ -143,11 +155,15 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 
 * string __name__
 
+
+
 ## Events
 
 ### Event
 
 *TODO*
+
+
 
 ## Constants
 
@@ -159,6 +175,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * objectId(Collection) __topRemixed__
 * objectId(Collection) __topLoved__
 * objectId(Collection) __topViewed__
+
+
 
 ## Data
 
@@ -221,6 +239,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * string __name__
 * string __hash__
 
+
+
 ## Blocks
 
 ### tuple Script
@@ -234,6 +254,8 @@ string<"administrator", "moderator", "default", "limited">? __group__ : the user
 * unsigned __id__
 * string __selector__
 * (Block|Block[]|string|trans|number)[] __arguments__
+
+
 
 ## Updates
 
