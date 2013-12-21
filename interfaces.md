@@ -8,6 +8,7 @@
 
 * __notFound__ = 1
 * __incorrectCredentials__ = 2
+* __invalidRequest__ = 3
 
 
 
