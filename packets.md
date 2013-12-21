@@ -21,7 +21,7 @@ Re: Client:connect.
 
 Sent when an internal error occurs on the server.
 
-* string __name __: the error name (for example, TypeError)
+* string __name__ : the error name (for example, TypeError)
 * string __message__ : the error message
 * string? __stack__ : the error stack; may not be present
 
