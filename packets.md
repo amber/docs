@@ -74,9 +74,17 @@ Creates a new empty project and returns the ID; objectId(Project).
 
 * string __request__
 
-### Client:project.addTagClient:project.removeTag
+### Client:project.addTag
 
-Adds or removes a tag from a project.
+Adds a tag to a project.
+
+* string __request__
+* objectId __project__
+* string __tag__
+
+### Client:project.removeTag
+
+Removes a tag from a project.
 
 * string __request__
 * objectId __project__
