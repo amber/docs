@@ -3,8 +3,8 @@
 ## GetAsset
 
 * __Method__: GET
-* __URL__: /api/assets/*hash*/
-* __Parameters__: *hash* — a SHA-256 hash.
+* __URL__: /api/assets/`hash`/
+* __Parameters__: `hash` — a SHA-256 hash.
 * __Returns__: The contents of the asset with the given hash.
 
 AddAsset
