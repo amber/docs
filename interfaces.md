@@ -13,7 +13,7 @@
 
 ### trans
 
-* string __$__ : the untranslated key
+* string __$__ — the untranslated key
 
 
 
@@ -22,7 +22,7 @@
 ### User
 
 * unsigned __scratchId__
-* string<"administrator", "moderator", "default", "limited">? __group__ : the user’s group, or null if "default"
+* string<"administrator", "moderator", "default", "limited">? __group__ — the user’s group, or null if "default"
 * string __about__
 * objectId(Project) __featuredProject__
 * objectId(ActivityFeed) __activity__
@@ -36,8 +36,8 @@
 
 ### UserInfo
 
-unsigned __scratchId__ : the number used by Scratch to identify the user
-string<"administrator", "moderator", "default", "limited">? __group__ : the user’s group, or null if default
+unsigned __scratchId__ — the number used by Scratch to identify the user
+string<"administrator", "moderator", "default", "limited">? __group__ — the user’s group, or null if default
 
 
 

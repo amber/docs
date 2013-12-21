@@ -7,23 +7,23 @@
 
 Sent upon connection to the server.
 
-* string? __user__ : the username of the user who last logged into the client, if that user chose to persist the login
-* string? __token__ : the last authentication token the client received from the server, or null if one is not present
+* string? __user__ — the username of the user who last logged into the client, if that user chose to persist the login
+* string? __token__ — the last authentication token the client received from the server, or null if one is not present
 
 ### Server:connect
 
 Re: Client:connect.
 
-* UserInfo? __user__ : the client’s current user or null if the client is not logged in
-* string? __token__ : a new login token, if the client is logged in
+* UserInfo? __user__ — the client’s current user or null if the client is not logged in
+* string? __token__ — a new login token, if the client is logged in
 
 ### Server:error
 
 Sent when an internal error occurs on the server.
 
-* string __name__ : the error name (for example, TypeError)
-* string __message__ : the error message
-* string? __stack__ : the error stack; may not be present
+* string __name__ — the error name (for example, TypeError)
+* string __message__ — the error message
+* string? __stack__ — the error stack; may not be present
 
 
 
@@ -33,8 +33,8 @@ Sent when an internal error occurs on the server.
 
 Initiates a sign-in attempt; User.
 
-* string __user__ : the username
-* string __password__ : the password
+* string __user__ — the username
+* string __password__ — the password
 
 ### Client:auth.signOut
 
@@ -170,8 +170,8 @@ Creates a new topic; objectId(Topic).
 
 * string __request__
 * objectId __forum__
-* string __name__ : the topic name
-* string __body__ : the post body
+* string __name__ — the topic name
+* string __body__ — the post body
 
 ### Client:topic.posts
 
@@ -179,8 +179,8 @@ Queries the list of posts in a topic; Post[].
 
 * string __request__
 * objectId __topicId__
-* unsigned __offset__ : the index at which to start returning results
-* unsigned __length__ : the number of results to return
+* unsigned __offset__ — the index at which to start returning results
+* unsigned __length__ — the number of results to return
 
 
 
@@ -229,7 +229,7 @@ All arrays are returned as the first 20 items, unless an offset is given, in whi
 
 ### Client:unwatch
 
-* unsigned __watch__ : the request ID of the initial watch packet
+* unsigned __watch__ — the request ID of the initial watch packet
 
 ### Client:projectCount
 
@@ -258,20 +258,20 @@ Query a constant value from the server.
 
 Re: any client request.
 
-* string __request__ : the request ID
-* * __result__ : the resultant data
+* string __request__ — the request ID
+* * __result__ — the resultant data
 
 ### Server:requestError
 
 Re: any client request. Sent when an error occurs.
 
-* string __request__ : the request ID
-* RequestError __reason__ : the error code
+* string __request__ — the request ID
+* RequestError __reason__ — the error code
 
 ### Server:watch.update
 
-* string __watch__ : the request ID for the initial watch packet
-* object __data__ : the data; includes arbitrary values and arrays of ListUpdate tuples
+* string __watch__ — the request ID for the initial watch packet
+* object __data__ — the data; includes arbitrary values and arrays of ListUpdate tuples
 
 ### Client:watch.list
 
