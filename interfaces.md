@@ -6,8 +6,8 @@
 
 ### enum RequestError
 
-* __notFound__ = 0
-* __incorrectCredentials__ = 1
+* __notFound__ = 1
+* __incorrectCredentials__ = 2
 
 
 
