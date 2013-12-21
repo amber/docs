@@ -110,10 +110,11 @@ Basic information about a user; UserInfo.
 
 ### Client:user.follow
 
-Toggles whether the current user is following the given user.
+Sets whether the current user is following the given user.
 
 * string __request__
 * string __user__
+* bool __isFollowing__
 
 
 
