@@ -39,7 +39,7 @@ Sends a chat message.
 
 ### Server:editor.chat.message
 
-Broadcast client:editor.chat.message.
+Broadcast Client:editor.chat.message.
 
 * string __user__
 * string __message__
@@ -66,7 +66,7 @@ Adds a variable to a sprite.
 
 ### Server:editor.sprite.addVariable
 
-Re client:editor.sprite.addVariable.
+Re Client:editor.sprite.addVariable.
 
 * unsigned __sprite__
 * string __variable__
@@ -80,7 +80,7 @@ Removes a variable from a sprite.
 
 ### Server:editor.sprite.removeVariable
 
-Re client:editor.sprite.removeVariable.
+Re Client:editor.sprite.removeVariable.
 
 * unsigned __sprite__
 * string __variable__
@@ -99,7 +99,7 @@ Creates a new script.
 
 ### Server:editor.script.create
 
-Broadcast and re client:editor.script.create; assigns IDs in script.
+Broadcast and re Client:editor.script.create; assigns IDs in script.
 
 * unsigned __sprite__
 * Script __script__
@@ -116,7 +116,7 @@ Detaches and moves the script starting with blockId.
 
 ### Server:editor.script.move
 
-Broadcast client:editor.script.move.
+Broadcast Client:editor.script.move.
 
 * unsigned __user__
 * unsigned __block__
@@ -131,7 +131,7 @@ Deletes the stack starting with blockId; cannot be used on reporters.
 
 ### Server:editor.script.delete
 
-Broadcast client:editor.script.delete.
+Broadcast Client:editor.script.delete.
 
 * unsigned __user__
 * unsigned __block__
@@ -144,7 +144,7 @@ Deletes a single block from a stack; if a reporter, deletes the reporter and any
 
 ### Server:editor.block.delete
 
-Broadcast client:editor.block.delete.
+Broadcast Client:editor.block.delete.
 
 * unsigned __user__
 * unsigned __block__
@@ -162,7 +162,7 @@ Sets the value of a slot.
 
 ### Server:editor.slot.set
 
-Broadcast client:editor.slot.set.
+Broadcast Client:editor.slot.set.
 
 * string __user__
 * unsigned __block__
@@ -178,7 +178,7 @@ Claims a slot.
 
 ### Server:editor.slot.claim
 
-Broadcast client:editor.slot.claim.
+Broadcast Client:editor.slot.claim.
 
 * string __user__
 * unsigned __block__
@@ -191,5 +191,6 @@ Revokes claim on currently claimed slot.
 
 ### Server:editor.slot.unclaim
 
+Broadcasts Client:editor.slot.unclaim
 
-# [broadcast client:editor.slot.unclaim]unsigned user
+* unsigned __user__
