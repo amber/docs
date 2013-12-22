@@ -57,16 +57,12 @@
 * string|trans __name__
 * string|trans __description__
 * bool __isUnread__
-* unsigned __topicCount__
-* unsigned __postCount__
 
 ### Forum
 
 * string|trans __name__
 * string|trans __description__
 * bool __isUnread__
-* unsigned __topicCount__
-* unsigned __postCount__
 * TopicStub[] __topics__
 
 ### TopicStub
