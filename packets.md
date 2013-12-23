@@ -32,7 +32,7 @@ Sent when an internal error occurs on the server.
 
 ### Client:auth.signIn
 
-Initiates a sign-in attempt; User.
+Initiates a sign-in attempt; AuthResult.
 
 * string __user__ — the username
 * string __password__ — the password
