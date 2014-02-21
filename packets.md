@@ -63,10 +63,11 @@ Add a view to the given project.
 
 ### Client:project.love
 
-Toggles a love on the given project.
+Sets whether the current user loves the given project.
 
 * string __request__
 * objectId __project__
+* bool __isLoved__
 
 ### Client:project.create
 
